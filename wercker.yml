@@ -1,0 +1,18 @@
+wercker.ymlbox: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: "0.17"
+        theme: angels-ladder
+        flags: --buildDrafts=true
+    - script:
+        name: rm .gitkeep
+        code: |
+          rm -f ./public/.gitkeep
+deploy:
+  steps:
+    - s3sync:
+      key-id: $AWS_ACCESS_KEY_ID
+      key-secret: $AWS_SECRET_ACCESS_KEY
+      bucket-url: $AWS_S3_BUCKET
+      source-dir: $SOURCE
