@@ -1,6 +1,6 @@
 baseurl = "http://blog.kikudai.com/"
 languageCode = "ja"
-title = "kikudai's blog"
+title = "kikudai blog"
 disqusShortname = "kikudai"
 theme = "angels-ladder"
 
