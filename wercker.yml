@@ -12,4 +12,12 @@ deploy:
       key-secret: $AWS_SECRET_ACCESS_KEY
       bucket-url: $AWS_S3_BUCKET
       source-dir: $SOURCE
-      opts: --encoding=utf-8
+      opts: --encoding=
+  after-steps:
+    - edgecaseadmin/install-aws-cli:
+      key: $AWS_ACCESS_KEY_ID
+      secret: $AWS_SECRET_ACCESS_KEY
+      region: $AWS_REGION
+    - script:
+      name: amazonS3-redirect-rule
+      code: aws s3api put-object --bucket blog.kikudai.com --key archives/tag/wordpress/index.html --website-redirect-location 'http://blog.kikudai.com/tags/wordpress'
