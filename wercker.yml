@@ -12,6 +12,4 @@ deploy:
       key-secret: $AWS_SECRET_ACCESS_KEY
       bucket-url: $AWS_S3_BUCKET
       source-dir: $SOURCE
-      opts:
-        - --encoding=utf-8
-        - --cf-invalidate
+      opts: --encoding=utf-8 --cf-invalidate
