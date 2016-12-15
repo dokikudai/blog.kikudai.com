@@ -20,4 +20,5 @@ deploy:
       region: $AWS_REGION
     - script:
       name: amazonS3-redirect-rule
-      code: aws s3api put-object --bucket blog.kikudai.com --key archives/tag/wordpress/index.html --website-redirect-location 'http://blog.kikudai.com/tags/wordpress'
+      code: |-
+        aws s3api put-object --bucket blog.kikudai.com --key archives/tag/wordpress/index.html --website-redirect-location 'http://blog.kikudai.com/tags/wordpress'
