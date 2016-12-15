@@ -2,13 +2,13 @@
 
 #tags
 aws s3api put-object --bucket blog.kikudai.com --key archives/tag/wordpress/index.html --website-redirect-location 'http://blog.kikudai.com/tags/wordpress'
-aws s3api put-object --bucket blog.kikudai.com --key archives/tag/東日本大震災/index.html --website-redirect-location 'http://blog.kikudai.com/tags/great-east-japan-earthquake'
-aws s3api put-object --bucket blog.kikudai.com --key archives/tag/育児/index.html --website-redirect-location 'http://blog.kikudai.com/tags/childcare'
+aws s3api put-object --bucket blog.kikudai.com --key archives/tag/%E6%9D%B1%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%9C%87%E7%81%BD/index.html --website-redirect-location 'http://blog.kikudai.com/tags/great-east-japan-earthquake'
+aws s3api put-object --bucket blog.kikudai.com --key archives/tag/%E8%82%B2%E5%85%90/index.html --website-redirect-location 'http://blog.kikudai.com/tags/childcare'
 aws s3api put-object --bucket blog.kikudai.com --key archives/tag/aws/index.html --website-redirect-location 'http://blog.kikudai.com/tags/aws'
-aws s3api put-object --bucket blog.kikudai.com --key archives/tag/家電/index.html --website-redirect-location 'http://blog.kikudai.com/tags/consumer-electronics'
+aws s3api put-object --bucket blog.kikudai.com --key archives/tag/%E5%AE%B6%E9%9B%BB/index.html --website-redirect-location 'http://blog.kikudai.com/tags/consumer-electronics'
 aws s3api put-object --bucket blog.kikudai.com --key archives/tag/diy/index.html --website-redirect-location 'http://blog.kikudai.com/tags/diy'
-aws s3api put-object --bucket blog.kikudai.com --key archives/tag/節約/index.html --website-redirect-location 'http://blog.kikudai.com/tags/power-saving'
-aws s3api put-object --bucket blog.kikudai.com --key archives/tag/本/index.html --website-redirect-location 'http://blog.kikudai.com/tags/book'
+aws s3api put-object --bucket blog.kikudai.com --key archives/tag/%E7%AF%80%E7%B4%84/index.html --website-redirect-location 'http://blog.kikudai.com/tags/power-saving'
+aws s3api put-object --bucket blog.kikudai.com --key archives/tag/%E6%9C%AC/index.html --website-redirect-location 'http://blog.kikudai.com/tags/book'
 aws s3api put-object --bucket blog.kikudai.com --key archives/tag/java/index.html --website-redirect-location 'http://blog.kikudai.com/tags/java'
 
 #category
