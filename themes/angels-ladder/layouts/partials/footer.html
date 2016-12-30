@@ -3,7 +3,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <footer role="contentinfo">
     <div style="text-align:center;">
-      {{ with .Site.Params.profile.img }}<img src="{{ . }}" width="64" height="55"><br>{{ end }}
+      <a href="/introduction">{{ with .Site.Params.profile.img }}<img src="{{ . }}" width="64" height="55"></a><br>{{ end }}
       {{ .Site.Params.copyright }}
     </div>
   </footer>
