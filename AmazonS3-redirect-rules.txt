@@ -100,3 +100,6 @@ aws s3api put-object --bucket blog.kikudai.com --key 2015/05/30/1177/index.html 
 aws s3api put-object --bucket blog.kikudai.com --key 2014/10/13/1055/index.html --website-redirect-location 'http://blog.kikudai.com/post/oct-13-2014_01'
 aws s3api put-object --bucket blog.kikudai.com --key 2015/10/13/1511/index.html --website-redirect-location 'http://blog.kikudai.com/post/oct-13-2015_01'
 aws s3api put-object --bucket blog.kikudai.com --key 2015/10/13/1513/index.html --website-redirect-location 'http://blog.kikudai.com/post/oct-13-2015_02'
+aws s3api put-object --bucket blog.kikudai.com --key self-introduction/index.html --website-redirect-location 'http://blog.kikudai.com/introduction'
+
+
