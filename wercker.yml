@@ -1,4 +1,4 @@
-box: debian
+box: python:2.7
 build:
   steps:
     - arjen/hugo-build:
