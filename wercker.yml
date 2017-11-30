@@ -2,7 +2,7 @@ box: python:2.7
 build:
   steps:
     - arjen/hugo-build:
-        version: "0.30"
+        version: "0.17"
         theme: angels-ladder
         flags: --buildDrafts=true
 deploy:
