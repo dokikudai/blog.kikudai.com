@@ -1,0 +1,20 @@
+# Nav.
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[main]]
+name = "Tags"
+url = "/tags"
+weight = 4

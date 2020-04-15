@@ -1,19 +1,11 @@
-baseurl = "http://blog.kikudai.com/"
+baseurl = "/"
 languageCode = "ja"
-title = "Kikudai Blog"
+title = "kikudai blog"
 disqusShortname = "kikudai"
-theme = "angels-ladder"
+theme = "hugo-ink"
+hasCJKLanguage = true
+paginate = 5
+copyright = "Written by Daichi Kikuchi"
 
-[Params]
-	subtitle = "人生何が起こるか分からない。"
-	facebook = "https://facebook.com/kikudai"
-	twitter = "https://twitter.com/dai__ki"
-	github = "https://github.com/kikudai"
-	showsRSS = true
-	copyright = "Written by Daichi Kikuchi"
-	analytics = "UA-18994391-5"
-	shareThis = "19955610-5f55-40c1-b5a2-2d4423574d3b"
-
-[Params.profile]
-	title = "プロフィール"
- 	img = "/img/profile.png"
+[taxonomies]
+  tag = "tags"

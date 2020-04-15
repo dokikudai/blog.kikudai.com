@@ -1,0 +1,21 @@
+subtitle = "人生何が起こるか分からない。"
+facebook = "https://facebook.com/kikudai"
+twitter = "https://twitter.com/dai__ki"
+github = "https://github.com/kikudai"
+showsRSS = true
+copyright = "Written by Daichi Kikuchi"
+analytics = "UA-18994391-5"
+shareThis = "19955610-5f55-40c1-b5a2-2d4423574d3b"
+
+# Optional 64x64 avatar image.
+avatar = "/img/profile.png"
+
+mode = "auto" # "dark" or "auto"
+# customCSS = "css/custom.css"  # Custom CSS applied to default styles.
+# customDarkCSS = "css/custom-dark.css"  # Custom styles applied to dark mode css.
+# customJS = ["js/custom.js", "js/custom1.js"]  # Custom JS scripts.
+
+[[social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
