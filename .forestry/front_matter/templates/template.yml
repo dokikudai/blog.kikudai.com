@@ -1,0 +1,31 @@
+---
+label: template
+hide_body: false
+fields:
+- type: number
+  name: id
+  label: id
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: text
+  name: guid
+  label: guid
+- type: text
+  name: permalink
+  label: permalink
+- type: list
+  name: dsq_needs_sync
+  label: dsq_needs_sync
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
