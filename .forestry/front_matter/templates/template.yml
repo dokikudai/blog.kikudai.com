@@ -11,3 +11,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- content/posts/aws-iotとmosquitto-mqtt-をwindowsローカル環境に構築.md
