@@ -15,12 +15,12 @@ MQTT、AWS IoT環境をWindowsマシンに構築し、MQTTの全体イメージ�
 
 * Windows 10 Pro
 * MQTT - Mosquitto 1.69 [Download | Eclipse Mosquitto](https://mosquitto.org/download/)
-* AWS IoT Core
+* AWS IoT - [IoT Core](https://console.aws.amazon.com/iot/home)
 
 ## 参考サイト
 
 * MQTTの仕組み理解に  
   [世界一スケーラブルなMQTTブローカー - IoT Edge Connect - - Akamai Japan Blog](https://blogs.akamai.com/jp/2019/06/iot---iot-egge-connect--.html)
 * MQTT構築・実践  
-  [MQTT通信を試してみよう！]([http://take6shin.blogspot.com/2019/01/mqtt.html)
+  [MQTT通信を試してみよう！](\[http://take6shin.blogspot.com/2019/01/mqtt.html)
 *
