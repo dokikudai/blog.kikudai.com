@@ -5,21 +5,30 @@ tags = ["iot"]
 title = "AWS IoT、Mosquitto(MQTT)、Windowsローカル環境構築"
 
 +++
-## はじめに
+## テーマ
 
-MQTT、AWS IoT環境をWindowsマシンに構築し、MQTTの全体イメージをつかみます。
+AWS IoTを利用してローカルPCからMQTTメッセージをS3に保存してみる。
 
-## ステータス
+## 構築内容
 
 構築時の環境、ミドルウェアのバージョン等
 
-* Windows 10 Pro
-* MQTT - Mosquitto 1.69 [Download | Eclipse Mosquitto](https://mosquitto.org/download/)
-* AWS IoT - [IoT Core](https://console.aws.amazon.com/iot/home)
+1. AWS IoT - [IoT Core](https://console.aws.amazon.com/iot/home)  
+   MQTT Broker、Subscriberの利用
+2. AWS S3  
+   MQTT経由データの保存
+3. MQTT - Mosquitto 1.69 （Windows 10 Pro 64bit）[Download | Eclipse Mosquitto](https://mosquitto.org/download/)  
+   MQTT Publisherとして利用
 
-## 構築してみる
+![](/img/nlm/aws-iot-to-s3.png "MQTT - AWS IoT to S3")
 
-### Mosquittoインストール
+### AWS IoT - IoT Core
+
+### AWS S3
+
+### MQTT - Mosquitto
+
+[Download | Eclipse Mosquitto](https://mosquitto.org/download/) から
 
 ## 参考サイト
 
@@ -27,4 +36,3 @@ MQTT、AWS IoT環境をWindowsマシンに構築し、MQTTの全体イメージ�
   [世界一スケーラブルなMQTTブローカー - IoT Edge Connect - - Akamai Japan Blog](https://blogs.akamai.com/jp/2019/06/iot---iot-egge-connect--.html)
 * MQTT構築・実践  
   [MQTT通信を試してみよう！](\[http://take6shin.blogspot.com/2019/01/mqtt.html)
-* 
