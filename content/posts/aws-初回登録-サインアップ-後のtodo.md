@@ -55,3 +55,15 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 以降はルートユーザ以外で作業可能なため、 [IAM のベストプラクティス - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#create-iam-users) の `個々の IAM ユーザーの作成` を実施しました。
 
 [最初の IAM 管理者のユーザーおよびグループの作成 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html) を参考に Administrator ユーザーを作成しました。
+
+## 4. アカウントIDのエイリアス化
+
+[AWS アカウント ID とその別名 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/console_account-alias.html#CreateAccountAlias) で、 `AWS アカウントの別名の作成` を実施しました。
+
+これでコンソールログインのとき、アカウント ID (12 桁) はなく、アカウントエイリアスでログインできるようになります。
+
+## 5. 強制MFAポリシーの作成とアタッチ
+
+ [チュートリアル: ユーザーが自分の認証情報および MFA を設定できるようにする - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) を参考に `強制MFAポリシー` を作成しました。
+ 
+ 早速このポリシーを Administrator ユーザーにアタッチしました。
