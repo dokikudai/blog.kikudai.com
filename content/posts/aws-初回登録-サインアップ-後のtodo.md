@@ -13,8 +13,8 @@ title = "aws 初回登録（サインアップ）後のtodo"
 
 1. ルートユーザーのセキュリティ対策
 2. IAM ユーザー/ロールによる請求情報へのアクセス有効化
-3. アカウントIDのエイリアス化
-4. Administrator ユーザー作成し、以後 Administrator で作業
+3. Administrator ユーザー作成し、以後 Administrator で作業
+4. アカウントIDのエイリアス化
 5. 強制MFAポリシーの作成とアタッチ
 6. FinanceManager ユーザーの作成
 
@@ -48,4 +48,12 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 ## 2. IAM ユーザー/ロールによる請求情報へのアクセス有効化
 
-[アクセス許可の管理の概要 - AWS 請求情報とコスト管理](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate) に従って、ルートユーザー以外でも請求情報を管理できるようにします。
+[アクセス許可の管理の概要 - AWS 請求情報とコスト管理](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate) に従って、ルートユーザー以外でも請求情報を管理できる設定をします。
+
+## 3. Administrator ユーザー作成し、以後 Administrator で作業
+
+以降はルートユーザ以外で作業可能なため、
+
+[IAM のベストプラクティス - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#create-iam-users)
+
+の `個々の IAM ユーザーの作成` に従い
