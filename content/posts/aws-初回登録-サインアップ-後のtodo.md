@@ -32,7 +32,7 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 [パスワードは複雑さより長さが大切 - Google 検索](https://www.google.com/search?q=%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AF%E8%A4%87%E9%9B%91%E3%81%95%E3%82%88%E3%82%8A%E9%95%B7%E3%81%95%E3%81%8C%E5%A4%A7%E5%88%87)
 
-以前は Lastpass というパスワード管理アプリを利用していましたが、最近 Bitwarden を利用しています。はやくパスワードに変わる認証方式になってほしいです。 
+以前は Lastpass というパスワード管理アプリを利用していましたが、最近 Bitwarden を利用しています。はやくパスワードに変わる認証方式になってほしいです。
 
 [Bitwarden - Google 検索](https://www.google.com/search?sxsrf=ALeKk00FMXFghXpGvtTSZfaxnj2PqOxeQA%3A1588260315551&ei=2-2qXvuqIZLVmAW7sKmQBA&q=Bitwarden&oq=Bitwarden&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQR1D4U1j4U2D8V2gAcAJ4AIABWogBWpIBATGYAQCgAQKgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwi7hK3fupDpAhWSKqYKHTtYCkIQ4dUDCAw&uact=5)
 
@@ -40,4 +40,14 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
     cat /dev/urandom | LC_CTYPE=C tr -dc '\[:alnum:\]' | head -c 16
 
-と
+### MFAの有効化
+
+[MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) の通りです。
+
+できれば、U2Fデバイスの有効化としたいところ。
+
+## 2. IAM ユーザー/ロールによる請求情報へのアクセス有効化
+
+[チュートリアル: 請求コンソールへのアクセス権の委任 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_billing.html)
+
+あ
