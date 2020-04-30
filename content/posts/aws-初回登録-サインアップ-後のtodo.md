@@ -28,7 +28,7 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 ### 15桁以上のパスワード
 
-以下を参考にルートユーザーのログインパスワードを15桁以上にします。
+以下を参考にルートユーザーのログインパスワードを15桁以上にしました。
 
 [パスワードは複雑さより長さが大切 - Google 検索](https://www.google.com/search?q=%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AF%E8%A4%87%E9%9B%91%E3%81%95%E3%82%88%E3%82%8A%E9%95%B7%E3%81%95%E3%81%8C%E5%A4%A7%E5%88%87)
 
@@ -36,24 +36,22 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 [Bitwarden - Google 検索](https://www.google.com/search?sxsrf=ALeKk00FMXFghXpGvtTSZfaxnj2PqOxeQA%3A1588260315551&ei=2-2qXvuqIZLVmAW7sKmQBA&q=Bitwarden&oq=Bitwarden&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADoECAAQR1D4U1j4U2D8V2gAcAJ4AIABWogBWpIBATGYAQCgAQKgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwi7hK3fupDpAhWSKqYKHTtYCkIQ4dUDCAw&uact=5)
 
-さくっと15桁以上のパスワード発行したい場合は、こちらのコマンドをどうぞ。（git bashなどの利用にて）
+さくっと15桁以上のパスワード発行したい場合は、こちらのコマンドをどうぞ。（git bashなど利用）
 
     cat /dev/urandom | LC_CTYPE=C tr -dc '\[:alnum:\]' | head -c 16
 
 ### MFAの有効化
 
-[MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) の通りです。
+[MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) を実施しました。
 
 できれば、U2Fデバイスの有効化としたいところです。
 
 ## 2. IAM ユーザー/ロールによる請求情報へのアクセス有効化
 
-[アクセス許可の管理の概要 - AWS 請求情報とコスト管理](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate) に従って、ルートユーザー以外でも請求情報を管理できる設定をします。
+[アクセス許可の管理の概要 - AWS 請求情報とコスト管理](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate) に従って、ルートユーザー以外でも請求情報を管理できる設定をしました。
 
 ## 3. Administrator ユーザー作成し、以後 Administrator で作業
 
-以降はルートユーザ以外で作業可能なため、
+以降はルートユーザ以外で作業可能なため、 [IAM のベストプラクティス - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#create-iam-users) の `個々の IAM ユーザーの作成` を実施しました。
 
-[IAM のベストプラクティス - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#create-iam-users)
-
-の `個々の IAM ユーザーの作成` に従い
+[最初の IAM 管理者のユーザーおよびグループの作成 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html) を参考に Administrator ユーザーを作成しました。
