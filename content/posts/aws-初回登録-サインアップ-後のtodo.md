@@ -67,3 +67,5 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
  [チュートリアル: ユーザーが自分の認証情報および MFA を設定できるようにする - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) を参考に `強制MFAポリシー` を作成しました。
  
  早速このポリシーを Administrator ユーザーにアタッチしました。
+ 
+ アタッチ後、 IAM 以外のサービスにアクセスすると、エラーでサービスが利用できなくなります。 IAM にて Administrator ユーザーの [MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) を実施します。
