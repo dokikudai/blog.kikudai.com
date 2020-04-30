@@ -28,7 +28,7 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 ### 15桁以上のパスワード
 
-以下を参考にルートユーザーのログインパスワードを15桁以上にしました。
+以下を参考にルートユーザーのログインパスワードを15桁以上に。
 
 [パスワードは複雑さより長さが大切 - Google 検索](https://www.google.com/search?q=%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%81%AF%E8%A4%87%E9%9B%91%E3%81%95%E3%82%88%E3%82%8A%E9%95%B7%E3%81%95%E3%81%8C%E5%A4%A7%E5%88%87)
 
@@ -54,7 +54,7 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 以降はルートユーザ以外で作業可能なため、 [IAM のベストプラクティス - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#create-iam-users) の `個々の IAM ユーザーの作成` を実施しました。
 
-[最初の IAM 管理者のユーザーおよびグループの作成 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html) を参考に Administrator ユーザーを作成しました。
+[最初の IAM 管理者のユーザーおよびグループの作成 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html) を参考に Administrator ユーザーを作成。
 
 ## 4. アカウントIDのエイリアス化
 
@@ -64,8 +64,8 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 ## 5. 強制MFAポリシーの作成とアタッチ
 
- [チュートリアル: ユーザーが自分の認証情報および MFA を設定できるようにする - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) を参考に `強制MFAポリシー` を作成しました。
- 
- 早速このポリシーを Administrator ユーザーにアタッチしました。
- 
- アタッチ後、 IAM 以外のサービスにアクセスすると、エラーでサービスが利用できなくなります。 IAM にて Administrator ユーザーの [MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) を実施します。
+[チュートリアル: ユーザーが自分の認証情報および MFA を設定できるようにする - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) を参考に `強制MFAポリシー` を作成します。
+
+早速このポリシーを Administrator ユーザーにアタッチ。
+
+アタッチ後、 IAM 以外のサービスにアクセスすると、エラーでサービスが利用できなくなります。 IAM にて Administrator ユーザーの [MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) を実施しました。
