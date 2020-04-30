@@ -69,3 +69,7 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 早速このポリシーを Administrator ユーザーにアタッチ。
 
 アタッチ後、 IAM 以外のサービスにアクセスすると、エラーでサービスが利用できなくなります。 IAM にて Administrator ユーザーの [MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) を実施しました。
+
+Administrator ユーザーでログインし直すと、 IAM 以外のサービスも利用出来るようになりました。
+
+## 6. FinanceManager ユーザーの作成
