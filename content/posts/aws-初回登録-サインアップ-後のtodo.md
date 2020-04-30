@@ -44,10 +44,8 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 [MFA の有効化](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/best-practices.html#enable-mfa-for-privileged-users) の通りです。
 
-できれば、U2Fデバイスの有効化としたいところ。
+できれば、U2Fデバイスの有効化としたいところです。
 
 ## 2. IAM ユーザー/ロールによる請求情報へのアクセス有効化
 
-[チュートリアル: 請求コンソールへのアクセス権の委任 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_billing.html)
-
-あ
+[アクセス許可の管理の概要 - AWS 請求情報とコスト管理](https://docs.aws.amazon.com/ja_jp/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate) に従って、ルートユーザー以外でも請求情報を管理できるようにします。
