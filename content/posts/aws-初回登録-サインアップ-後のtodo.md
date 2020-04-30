@@ -56,6 +56,17 @@ IAMのユーザー、グループ、ロール、ポリシーの基本的な理�
 
 [最初の IAM 管理者のユーザーおよびグループの作成 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html) を参考に Administrator ユーザーを作成。
 
+ユーザー作成時のタグ付ですが、タグの効果的な使い方が今ひとつだったので、 ぐぐって眺めてみたところ [Tagの効能 | AWSコスト削減・IaaSインフラ構築のシンプライン株式会社](https://www.simpline.co.jp/tech/tag%E3%81%AE%E5%8A%B9%E8%83%BD/) が一番しっくりきました。
+
+とりあえず、Administrator ユーザーのタグ（タグ名=値）として、
+
+* email=メアド（Administratorに割り当てるメアド）
+* todo=https://trello.com/c/.../.
+
+の2つを設定。
+
+todoのがtrelloなのは、これらの作業をtrelloで管理していたため。
+
 ## 4. アカウントIDのエイリアス化
 
 [AWS アカウント ID とその別名 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/console_account-alias.html#CreateAccountAlias) で、 `AWS アカウントの別名の作成` を実施しました。
