@@ -86,3 +86,5 @@ todoのがtrelloなのは、これらの作業をtrelloで管理していたた�
 Administrator ユーザーでログインし直すと、 IAM 以外のサービスも利用出来るようになりました。
 
 ## 6. FinanceManager ユーザーの作成
+
+[チュートリアル: ユーザーが自分の認証情報および MFA を設定できるようにする - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/tutorial_users-self-manage-mfa-and-creds.html) に従って請求情報を管理する FinanceManager ユーザーを作成しました。
