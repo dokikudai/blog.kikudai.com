@@ -1,0 +1,16 @@
+---
+label: basic template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+pages:
+- content/posts/aws-iotとmosquitto-mqtt-をwindowsローカル環境に構築.md
+- content/posts/aws-初回登録-サインアップ-後のtodo.md
