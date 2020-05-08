@@ -1,7 +1,7 @@
 +++
 date = 2020-05-02T15:00:00Z
 tags = ["IAM", "AWS"]
-title = "aws 初回登録（サインアップ）後のtodo"
+title = "aws 初回登録（サインアップ）後のtodo（その1）"
 
 +++
 ## サマリー
