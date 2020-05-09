@@ -29,3 +29,22 @@ title = "aws 初回登録（サインアップ）後のtodo（その2）"
 SNSの認証メールが配信されるのでメール内の `Confirm subscription` リンクを押して認証します。
 
 ## 2. MFAからU2Fに切替
+
+[Yubico セキュリティキー NFC USB-A 2つのファクター認証セキュリティキー](https://www.amazon.co.jp/gp/product/B07M8YBWQZ/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B07M8YBWQZ&linkCode=as2&tag=dokikudai-22&linkId=0cd33da37e63f10fdcbd87d208e95b0c) を購入したのでGoogle認証システムを利用したMFA（2段階認証）から、 `U2F セキュリティキー` の認証方式に切り替えます。
+
+### Yubicoキーについて
+
+Yubicoキーはいくつか種類があり、どれを購入したらよいか迷います。  
+NFC機能があればスマフォからのU2Fもできます。  
+また青いキーのSecurity Keyと、黒いキーのYubiKey 5がありますが、黒いキーの方がU2F以外にも機能があって値段も少し高くなります。
+
+以下で違いが把握できます。  
+[YubiKey の種類【YubiKeyとは-part1】 | YubiOn](https://www.yubion.com/trend/tech-blog/906/)
+
+### Google認証システムからYubicoセキュリティキーに切替
+
+既存のMFAを削除し、 [U2F セキュリティキーの有効化 (コンソール) - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_mfa_enable_u2f.html#enable-u2f-mfa-for-iam-user) 「別IAM ユーザーの U2F セキュリティキーを有効にする (コンソール)」を実施します。
+
+上記U2F有効化の記事中に「必要なアクセス許可」のポリシーがありますが、強制MFAをしたいときのカスタムポリシーと思われるので、必要なければ実施する必要はありません。
+
+また、前回の
