@@ -9,3 +9,6 @@ copyright = "Written by Daichi Kikuchi"
 
 [taxonomies]
   tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true
