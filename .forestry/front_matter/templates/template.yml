@@ -12,6 +12,7 @@ fields:
   name: tags
   label: tags
 pages:
+- content/posts/20200516.md
 - content/posts/aws-iotとmosquitto-mqtt-をwindowsローカル環境に構築.md
 - content/posts/may-03-2020-001.md
 - content/posts/may-08-2020-001.md
